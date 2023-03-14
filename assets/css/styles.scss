@@ -6,7 +6,6 @@ $text_color: #e4e5ea;
 $text_hover: #f58b4d;
 $list_header: #656566;
 $action_button_background: #4077f3;
-
 $header_mobile_background: #0e1014;
 
 * {
@@ -34,6 +33,7 @@ body {
   color: $text_color;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
+  position: relative;
 
   @media screen and (max-width: 320px) {
     font-size: 14px;
@@ -42,8 +42,7 @@ body {
 }
 
 .balls {
-  position: absolute;
-  width: 100vw;
+  position: relative;
   margin: 0 auto;
   z-index: -1;
   display: flex;
@@ -56,11 +55,10 @@ body {
   .balls__wrapper {
     width: 1440px;
     margin: 0 auto;
-    position: relative;
   }
 
   .ball {
-    position: fixed;
+    position: absolute;
     border-radius: 50%;
   }
 
@@ -199,22 +197,25 @@ body {
   }
 }
 
+.page-header__logo {
+  position: relative;
+}
+
+.page-header .after-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  max-width: 165px;
+  max-height: 24px;
+  font-size: 10px;
+  margin-top: 10px;
+  position: absolute;
+}
+
 .page-header__logo a {
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 8px;
-
-  &::after {
-    content: 'крупный интегратор CRM в Росcии и ещё 8 странах';
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    max-width: 165px;
-    max-height: 24px;
-    font-size: 10px;
-    margin-top: 34px;
-    position: absolute;
-  }
 
   @media screen and (max-width: 320px) {
     display: none;
