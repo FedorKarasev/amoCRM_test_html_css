@@ -123,10 +123,12 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 46px;
+  margin-bottom: 36px;
 }
 @media screen and (max-width: 320px) {
   .page-header {
     margin-top: 0;
+    margin-bottom: 0;
     height: 55px;
     background-color: #0e1014;
     text-transform: uppercase;
@@ -319,7 +321,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 129px;
+  margin-top: 93px;
   position: relative;
 }
 @media screen and (max-width: 320px) {
